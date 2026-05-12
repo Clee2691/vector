@@ -489,6 +489,7 @@ ocp-logging = [
 
   "sinks-aws_cloudwatch_logs",
   "sinks-aws_s3",
+  "sinks-azure_logs_ingestion",
   "sinks-azure_monitor_logs",
   "sinks-elasticsearch",
   "sinks-file",
@@ -778,6 +779,7 @@ sinks-logs = [
   "sinks-aws_sqs",
   "sinks-axiom",
   "sinks-azure_blob",
+  "sinks-azure_logs_ingestion",
   "sinks-azure_monitor_logs",
   "sinks-blackhole",
   "sinks-chronicle",
@@ -844,6 +846,7 @@ sinks-aws_sqs = ["aws-core", "dep:aws-sdk-sqs"]
 sinks-aws_sns = ["aws-core", "dep:aws-sdk-sns"]
 sinks-axiom = ["sinks-http"]
 sinks-azure_blob = ["dep:azure_core", "dep:azure_identity", "dep:azure_storage", "dep:azure_storage_blobs"]
+sinks-azure_logs_ingestion = ["dep:azure_core", "dep:azure_identity"]
 sinks-azure_monitor_logs = []
 sinks-blackhole = []
 sinks-chronicle = []
